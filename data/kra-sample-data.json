@@ -1,0 +1,138 @@
+{
+  "siteSettings": {
+    "siteName": "Kenya Revenue Authority",
+    "siteDescription": "Enhancing revenue collection and facilitating voluntary tax compliance through quality service delivery",
+    "heroTitle": "Kenya Revenue Authority",
+    "heroSubtitle": "Enhancing revenue collection and facilitating voluntary tax compliance through quality service delivery",
+    "primaryCtaText": "Access iTax Portal",
+    "primaryCtaUrl": "https://itax.kra.go.ke",
+    "secondaryCtaText": "Learn More",
+    "secondaryCtaUrl": "/about",
+    "contactInfo": {
+      "phone": "+254 20 310900",
+      "email": "info@kra.go.ke",
+      "address": "Times Tower Building, Haile Selassie Avenue, P.O. Box 48240-00100, Nairobi, Kenya",
+      "workingHours": "Monday - Friday: 8:00 AM - 5:00 PM"
+    },
+    "socialLinks": [
+      {
+        "platform": "facebook",
+        "url": "https://facebook.com/KenyaRevenueAuthority",
+        "label": "Facebook"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://twitter.com/KRA_Kenya",
+        "label": "Twitter"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://youtube.com/KenyaRevenueAuthority",
+        "label": "YouTube"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "PIN Registration",
+      "description": "Register for a Personal Identification Number (PIN) for tax purposes",
+      "category": "individual",
+      "isQuickLink": true,
+      "icon": "person",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "title": "Filing & Paying",
+      "description": "File your tax returns and make payments online",
+      "category": "individual",
+      "isQuickLink": true,
+      "icon": "document",
+      "order": 2,
+      "isActive": true
+    },
+    {
+      "title": "Special Needs",
+      "description": "Services for taxpayers with special requirements",
+      "category": "individual",
+      "isQuickLink": true,
+      "icon": "globe",
+      "order": 3,
+      "isActive": true
+    },
+    {
+      "title": "Diaspora Affairs",
+      "description": "Tax services for Kenyans living abroad",
+      "category": "individual",
+      "isQuickLink": true,
+      "icon": "building",
+      "order": 4,
+      "isActive": true
+    },
+    {
+      "title": "Business Registration",
+      "description": "Register your business and obtain necessary permits",
+      "category": "business",
+      "isQuickLink": false,
+      "icon": "briefcase",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "title": "VAT Registration",
+      "description": "Register for Value Added Tax (VAT)",
+      "category": "business",
+      "isQuickLink": false,
+      "icon": "receipt",
+      "order": 2,
+      "isActive": true
+    },
+    {
+      "title": "Investment Incentives",
+      "description": "Learn about tax incentives for investors",
+      "category": "investor",
+      "isQuickLink": false,
+      "icon": "trending-up",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "title": "Agent Services",
+      "description": "Services for tax agents and consultants",
+      "category": "agent",
+      "isQuickLink": false,
+      "icon": "user-tie",
+      "order": 1,
+      "isActive": true
+    }
+  ],
+  "news": [
+    {
+      "title": "KRA Launches New iTax Portal Features",
+      "excerpt": "Enhanced user experience with new features for easier tax filing and payment",
+      "content": "The Kenya Revenue Authority has launched new features on the iTax portal to improve user experience and make tax compliance easier for all taxpayers.",
+      "category": "announcement",
+      "isFeatured": true,
+      "publishedDate": "2024-01-15T10:00:00.000Z",
+      "tags": ["itax", "portal", "features"]
+    },
+    {
+      "title": "Tax Filing Deadline Extended",
+      "excerpt": "Deadline for filing annual returns extended by 30 days",
+      "content": "In consideration of the current economic challenges, KRA has extended the tax filing deadline to provide relief to taxpayers.",
+      "category": "announcement",
+      "isFeatured": true,
+      "publishedDate": "2024-01-10T09:00:00.000Z",
+      "tags": ["deadline", "extension", "filing"]
+    },
+    {
+      "title": "New Tax Rates for 2024",
+      "excerpt": "Updated tax rates and brackets for the new financial year",
+      "content": "The new tax rates for 2024 have been published and are now effective. Please review the changes to ensure compliance.",
+      "category": "update",
+      "isFeatured": false,
+      "publishedDate": "2024-01-01T00:00:00.000Z",
+      "tags": ["rates", "2024", "tax"]
+    }
+  ]
+}

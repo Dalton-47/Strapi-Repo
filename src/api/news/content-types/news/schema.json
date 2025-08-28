@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kra_news",
+  "info": {
+    "singularName": "news",
+    "pluralName": "kra-news",
+    "displayName": "News",
+    "description": "KRA news and announcements"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "excerpt": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["announcement", "press-release", "update", "general"],
+      "default": "general"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "publishedDate": {
+      "type": "datetime"
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}
