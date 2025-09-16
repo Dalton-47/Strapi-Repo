@@ -14,6 +14,59 @@ export interface SharedContactInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedContentSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_content_sections';
+  info: {
+    displayName: 'Content Section';
+    icon: 'file-text';
+  };
+  attributes: {
+    backgroundColor: Schema.Attribute.String;
+    content: Schema.Attribute.RichText;
+    image: Schema.Attribute.Media<'images'>;
+    imagePosition: Schema.Attribute.Enumeration<
+      ['left', 'right', 'top', 'bottom']
+    > &
+      Schema.Attribute.DefaultTo<'right'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCtaSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_sections';
+  info: {
+    displayName: 'Call to Action Section';
+    icon: 'hand-pointer';
+  };
+  attributes: {
+    backgroundColor: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    primaryCtaText: Schema.Attribute.String & Schema.Attribute.Required;
+    primaryCtaUrl: Schema.Attribute.String & Schema.Attribute.Required;
+    secondaryCtaText: Schema.Attribute.String;
+    secondaryCtaUrl: Schema.Attribute.String;
+    textColor: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_hero_sections';
+  info: {
+    displayName: 'Hero Section';
+    icon: 'landscape';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    ctaText: Schema.Attribute.String;
+    ctaUrl: Schema.Attribute.String;
+    secondaryCtaText: Schema.Attribute.String;
+    secondaryCtaUrl: Schema.Attribute.String;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -80,15 +133,12 @@ export interface SharedSocialLink extends Struct.ComponentSchema {
   collectionName: 'components_shared_social_links';
   info: {
     displayName: 'Social Link';
-    icon: 'link';
+    icon: 'share-alt';
   };
   attributes: {
-    label: Schema.Attribute.String;
-    platform: Schema.Attribute.Enumeration<
-      ['facebook', 'twitter', 'linkedin', 'youtube', 'instagram', 'other']
-    > &
-      Schema.Attribute.Required;
-    url: Schema.Attribute.String & Schema.Attribute.Required;
+    icon: Schema.Attribute.String;
+    platform: Schema.Attribute.String;
+    url: Schema.Attribute.String;
   };
 }
 
@@ -96,6 +146,9 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.contact-info': SharedContactInfo;
+      'shared.content-section': SharedContentSection;
+      'shared.cta-section': SharedCtaSection;
+      'shared.hero-section': SharedHeroSection;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

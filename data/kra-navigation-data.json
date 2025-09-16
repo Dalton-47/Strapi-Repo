@@ -1,0 +1,192 @@
+{
+  "navigationMenus": [
+    {
+      "title": "Individual",
+      "slug": "individual",
+      "url": "/individual",
+      "isMainMenu": true,
+      "isActive": true,
+      "order": 1,
+      "description": "Services for individual taxpayers",
+      "children": [
+        {
+          "title": "PIN Registration",
+          "slug": "pin-registration",
+          "url": "/individual/pin-registration",
+          "isActive": true,
+          "order": 1,
+          "description": "Learn about KRA PIN",
+          "children": [
+            {
+              "title": "About PIN",
+              "slug": "about-pin",
+              "url": "/individual/pin-registration/about-pin",
+              "isActive": true,
+              "order": 1
+            },
+            {
+              "title": "Tax Obligations",
+              "slug": "tax-obligations",
+              "url": "/individual/pin-registration/tax-obligations",
+              "isActive": true,
+              "order": 2
+            },
+            {
+              "title": "Requirements for Registration",
+              "slug": "registration-requirements",
+              "url": "/individual/pin-registration/requirements",
+              "isActive": true,
+              "order": 3
+            }
+          ]
+        },
+        {
+          "title": "Filing & Paying",
+          "slug": "filing-paying",
+          "url": "/individual/filing-paying",
+          "isActive": true,
+          "order": 2,
+          "description": "File & Pay",
+          "children": [
+            {
+              "title": "Individual Income Tax",
+              "slug": "individual-income-tax",
+              "url": "/individual/filing-paying/income-tax",
+              "isActive": true,
+              "order": 1
+            },
+            {
+              "title": "Pay As You Earn (PAYE)",
+              "slug": "paye",
+              "url": "/individual/filing-paying/paye",
+              "isActive": true,
+              "order": 2
+            },
+            {
+              "title": "Tax Compliance Certificate (TCC)",
+              "slug": "tcc",
+              "url": "/individual/filing-paying/tcc",
+              "isActive": true,
+              "order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Business",
+      "slug": "business",
+      "url": "/business",
+      "isMainMenu": true,
+      "isActive": true,
+      "order": 2,
+      "description": "Services for businesses",
+      "children": [
+        {
+          "title": "Companies & Partnerships",
+          "slug": "companies-partnerships",
+          "url": "/business/companies-partnerships",
+          "isActive": true,
+          "order": 1,
+          "description": "Taxation for Companies & Partnerships"
+        },
+        {
+          "title": "eTIMS",
+          "slug": "etims",
+          "url": "/business/etims",
+          "isActive": true,
+          "order": 2,
+          "description": "Learn About eTIMS"
+        }
+      ]
+    },
+    {
+      "title": "Investors",
+      "slug": "investors",
+      "url": "/investors",
+      "isMainMenu": true,
+      "isActive": true,
+      "order": 3,
+      "description": "Investment services",
+      "children": [
+        {
+          "title": "Incentives & Certification",
+          "slug": "incentives-certification",
+          "url": "/investors/incentives-certification",
+          "isActive": true,
+          "order": 1,
+          "description": "Investing in Kenya"
+        }
+      ]
+    },
+    {
+      "title": "Agents",
+      "slug": "agents",
+      "url": "/agents",
+      "isMainMenu": true,
+      "isActive": true,
+      "order": 4,
+      "description": "Agent services",
+      "children": [
+        {
+          "title": "Customs Agent",
+          "slug": "customs-agent",
+          "url": "/agents/customs-agent",
+          "isActive": true,
+          "order": 1,
+          "description": "About Customs Agent"
+        },
+        {
+          "title": "Tax Agents",
+          "slug": "tax-agents",
+          "url": "/agents/tax-agents",
+          "isActive": true,
+          "order": 2,
+          "description": "About Tax Agents"
+        }
+      ]
+    }
+  ],
+  "pageContents": [
+    {
+      "title": "Home",
+      "slug": "home",
+      "pageType": "home",
+      "isHomepage": true,
+      "metaDescription": "Kenya Revenue Authority - Helping you find tax information & services",
+      "content": "<p>Welcome to the Kenya Revenue Authority. We help you find tax information and services.</p>",
+      "sections": [
+        {
+          "__component": "shared.hero-section",
+          "title": "Helping you find tax information & services",
+          "subtitle": "I would like to",
+          "ctaText": "GET STARTED",
+          "ctaUrl": "/services"
+        }
+      ]
+    }
+  ],
+  "contactInfos": [
+    {
+      "name": "KRA Headquarters",
+      "type": "headquarters",
+      "address": "Times Tower Building, Haile Selassie Avenue, P. O. Box 48240 - 00100, Nairobi Kenya",
+      "phone": "+254 20 4 999 999",
+      "email": "callcentre@kra.go.ke",
+      "workingHours": "Monday - Friday: 8:00 AM - 5:00 PM",
+      "isPrimary": true,
+      "coordinates": {
+        "lat": -1.2921,
+        "lng": 36.8219
+      }
+    },
+    {
+      "name": "KRA Contact Centre",
+      "type": "contact-center",
+      "phone": "+254 20 4 999 999",
+      "email": "callcentre@kra.go.ke",
+      "workingHours": "24/7",
+      "isPrimary": true
+    }
+  ]
+}

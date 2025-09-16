@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_contents",
+  "info": {
+    "singularName": "page-content",
+    "pluralName": "page-contents",
+    "displayName": "Page Content",
+    "description": "Dynamic page content for KRA website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "excerpt": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "pageType": {
+      "type": "enumeration",
+      "enum": ["home", "about", "services", "news", "contact", "general"],
+      "default": "general"
+    },
+    "isHomepage": {
+      "type": "boolean",
+      "default": false
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": ["shared.hero-section", "shared.content-section", "shared.cta-section"]
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

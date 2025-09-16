@@ -11,12 +11,14 @@
     "develop": "npx strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "seed:kra": "node ./scripts/seed-kra.js",
+    "seed:kra-nav": "node ./scripts/seed-kra-navigation.js",
     "start": "npx strapi start",
     "strapi": "npx strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@babel/runtime": "^7.23.0",
     "@strapi/plugin-cloud": "5.23.1",
     "@strapi/plugin-users-permissions": "5.23.1",
     "@strapi/strapi": "5.23.1",

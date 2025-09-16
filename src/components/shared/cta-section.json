@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_cta_sections",
+  "info": {
+    "displayName": "Call to Action Section",
+    "icon": "hand-pointer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "required": true
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "required": true
+    },
+    "secondaryCtaText": {
+      "type": "string"
+    },
+    "secondaryCtaUrl": {
+      "type": "string"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    }
+  }
+}
